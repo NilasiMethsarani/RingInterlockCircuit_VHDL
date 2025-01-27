@@ -1,0 +1,331 @@
+TimeQuest Timing Analyzer report for INTERLOCK
+Thu May 02 10:34:10 2024
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Propagation Delay
+ 12. Minimum Propagation Delay
+ 13. Clock Transfers
+ 14. Report TCCS
+ 15. Report RSKM
+ 16. Unconstrained Paths
+ 17. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name      ; INTERLOCK                                          ;
+; Device Family      ; MAX II                                             ;
+; Device Name        ; EPM240T100C5                                       ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Slow Model                                         ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-8         ;   0.0%      ;
++----------------------------+-------------+
+
+
+----------
+; Clocks ;
+----------
+No clocks to report.
+
+
+----------------
+; Fmax Summary ;
+----------------
+No paths to report.
+
+
+-----------------
+; Setup Summary ;
+-----------------
+No paths to report.
+
+
+----------------
+; Hold Summary ;
+----------------
+No paths to report.
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
+-------------------------------
+; Minimum Pulse Width Summary ;
+-------------------------------
+No paths to report.
+
+
++------------------------------------------------------+
+; Propagation Delay                                    ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; i_AA       ; o_A         ; 10.859 ;    ;    ; 10.859 ;
+; i_AB       ; o_B         ; 11.505 ;    ;    ; 11.505 ;
+; i_AC       ; o_C         ; 11.925 ;    ;    ; 11.925 ;
+; i_AD       ; o_D         ; 12.584 ;    ;    ; 12.584 ;
+; i_AE       ; o_E         ; 10.852 ;    ;    ; 10.852 ;
+; i_AF       ; o_F         ; 13.416 ;    ;    ; 13.416 ;
+; i_AG       ; o_G         ; 13.353 ;    ;    ; 13.353 ;
+; i_AH       ; o_H         ; 10.064 ;    ;    ; 10.064 ;
+; i_BA       ; o_A         ; 9.803  ;    ;    ; 9.803  ;
+; i_BB       ; o_B         ; 10.190 ;    ;    ; 10.190 ;
+; i_BC       ; o_C         ; 9.414  ;    ;    ; 9.414  ;
+; i_BD       ; o_D         ; 11.869 ;    ;    ; 11.869 ;
+; i_BE       ; o_E         ; 11.648 ;    ;    ; 11.648 ;
+; i_BF       ; o_F         ; 13.748 ;    ;    ; 13.748 ;
+; i_BG       ; o_G         ; 13.261 ;    ;    ; 13.261 ;
+; i_BH       ; o_H         ; 11.197 ;    ;    ; 11.197 ;
+; i_CA       ; o_A         ; 12.496 ;    ;    ; 12.496 ;
+; i_CB       ; o_B         ; 13.450 ;    ;    ; 13.450 ;
+; i_CC       ; o_C         ; 9.008  ;    ;    ; 9.008  ;
+; i_CD       ; o_D         ; 8.722  ;    ;    ; 8.722  ;
+; i_CE       ; o_E         ; 10.517 ;    ;    ; 10.517 ;
+; i_CF       ; o_F         ; 13.540 ;    ;    ; 13.540 ;
+; i_CG       ; o_G         ; 13.048 ;    ;    ; 13.048 ;
+; i_CH       ; o_H         ; 13.096 ;    ;    ; 13.096 ;
+; i_DA       ; o_A         ; 12.126 ;    ;    ; 12.126 ;
+; i_DB       ; o_B         ; 11.804 ;    ;    ; 11.804 ;
+; i_DC       ; o_C         ; 8.566  ;    ;    ; 8.566  ;
+; i_DD       ; o_D         ; 9.129  ;    ;    ; 9.129  ;
+; i_DE       ; o_E         ; 8.184  ;    ;    ; 8.184  ;
+; i_DF       ; o_F         ; 12.118 ;    ;    ; 12.118 ;
+; i_DG       ; o_G         ; 12.170 ;    ;    ; 12.170 ;
+; i_DH       ; o_H         ; 12.078 ;    ;    ; 12.078 ;
+; i_EA       ; o_A         ; 12.524 ;    ;    ; 12.524 ;
+; i_EB       ; o_B         ; 13.030 ;    ;    ; 13.030 ;
+; i_EC       ; o_C         ; 10.862 ;    ;    ; 10.862 ;
+; i_ED       ; o_D         ; 12.285 ;    ;    ; 12.285 ;
+; i_EE       ; o_E         ; 9.273  ;    ;    ; 9.273  ;
+; i_EF       ; o_F         ; 13.601 ;    ;    ; 13.601 ;
+; i_EG       ; o_G         ; 12.612 ;    ;    ; 12.612 ;
+; i_EH       ; o_H         ; 12.831 ;    ;    ; 12.831 ;
+; i_FA       ; o_A         ; 13.497 ;    ;    ; 13.497 ;
+; i_FB       ; o_B         ; 13.226 ;    ;    ; 13.226 ;
+; i_FC       ; o_C         ; 11.434 ;    ;    ; 11.434 ;
+; i_FD       ; o_D         ; 10.626 ;    ;    ; 10.626 ;
+; i_FE       ; o_E         ; 8.940  ;    ;    ; 8.940  ;
+; i_FF       ; o_F         ; 10.984 ;    ;    ; 10.984 ;
+; i_FG       ; o_G         ; 11.527 ;    ;    ; 11.527 ;
+; i_FH       ; o_H         ; 10.878 ;    ;    ; 10.878 ;
+; i_GA       ; o_A         ; 13.391 ;    ;    ; 13.391 ;
+; i_GB       ; o_B         ; 12.689 ;    ;    ; 12.689 ;
+; i_GC       ; o_C         ; 11.745 ;    ;    ; 11.745 ;
+; i_GD       ; o_D         ; 11.180 ;    ;    ; 11.180 ;
+; i_GE       ; o_E         ; 11.685 ;    ;    ; 11.685 ;
+; i_GF       ; o_F         ; 11.369 ;    ;    ; 11.369 ;
+; i_GG       ; o_G         ; 10.298 ;    ;    ; 10.298 ;
+; i_GH       ; o_H         ; 13.312 ;    ;    ; 13.312 ;
+; i_HA       ; o_A         ; 10.621 ;    ;    ; 10.621 ;
+; i_HB       ; o_B         ; 10.358 ;    ;    ; 10.358 ;
+; i_HC       ; o_C         ; 11.904 ;    ;    ; 11.904 ;
+; i_HD       ; o_D         ; 12.761 ;    ;    ; 12.761 ;
+; i_HE       ; o_E         ; 11.511 ;    ;    ; 11.511 ;
+; i_HF       ; o_F         ; 12.053 ;    ;    ; 12.053 ;
+; i_HG       ; o_G         ; 10.415 ;    ;    ; 10.415 ;
+; i_HH       ; o_H         ; 9.703  ;    ;    ; 9.703  ;
++------------+-------------+--------+----+----+--------+
+
+
++------------------------------------------------------+
+; Minimum Propagation Delay                            ;
++------------+-------------+--------+----+----+--------+
+; Input Port ; Output Port ; RR     ; RF ; FR ; FF     ;
++------------+-------------+--------+----+----+--------+
+; i_AA       ; o_A         ; 10.859 ;    ;    ; 10.859 ;
+; i_AB       ; o_B         ; 9.890  ;    ;    ; 9.890  ;
+; i_AC       ; o_C         ; 9.947  ;    ;    ; 9.947  ;
+; i_AD       ; o_D         ; 12.584 ;    ;    ; 12.584 ;
+; i_AE       ; o_E         ; 10.503 ;    ;    ; 10.503 ;
+; i_AF       ; o_F         ; 13.416 ;    ;    ; 13.416 ;
+; i_AG       ; o_G         ; 11.897 ;    ;    ; 11.897 ;
+; i_AH       ; o_H         ; 10.064 ;    ;    ; 10.064 ;
+; i_BA       ; o_A         ; 9.803  ;    ;    ; 9.803  ;
+; i_BB       ; o_B         ; 10.190 ;    ;    ; 10.190 ;
+; i_BC       ; o_C         ; 9.414  ;    ;    ; 9.414  ;
+; i_BD       ; o_D         ; 11.869 ;    ;    ; 11.869 ;
+; i_BE       ; o_E         ; 10.509 ;    ;    ; 10.509 ;
+; i_BF       ; o_F         ; 13.748 ;    ;    ; 13.748 ;
+; i_BG       ; o_G         ; 12.723 ;    ;    ; 12.723 ;
+; i_BH       ; o_H         ; 11.197 ;    ;    ; 11.197 ;
+; i_CA       ; o_A         ; 12.149 ;    ;    ; 12.149 ;
+; i_CB       ; o_B         ; 12.006 ;    ;    ; 12.006 ;
+; i_CC       ; o_C         ; 9.008  ;    ;    ; 9.008  ;
+; i_CD       ; o_D         ; 8.722  ;    ;    ; 8.722  ;
+; i_CE       ; o_E         ; 9.838  ;    ;    ; 9.838  ;
+; i_CF       ; o_F         ; 13.540 ;    ;    ; 13.540 ;
+; i_CG       ; o_G         ; 12.511 ;    ;    ; 12.511 ;
+; i_CH       ; o_H         ; 13.096 ;    ;    ; 13.096 ;
+; i_DA       ; o_A         ; 11.750 ;    ;    ; 11.750 ;
+; i_DB       ; o_B         ; 11.804 ;    ;    ; 11.804 ;
+; i_DC       ; o_C         ; 8.566  ;    ;    ; 8.566  ;
+; i_DD       ; o_D         ; 9.129  ;    ;    ; 9.129  ;
+; i_DE       ; o_E         ; 8.184  ;    ;    ; 8.184  ;
+; i_DF       ; o_F         ; 12.118 ;    ;    ; 12.118 ;
+; i_DG       ; o_G         ; 11.634 ;    ;    ; 11.634 ;
+; i_DH       ; o_H         ; 12.078 ;    ;    ; 12.078 ;
+; i_EA       ; o_A         ; 11.611 ;    ;    ; 11.611 ;
+; i_EB       ; o_B         ; 13.030 ;    ;    ; 13.030 ;
+; i_EC       ; o_C         ; 10.611 ;    ;    ; 10.611 ;
+; i_ED       ; o_D         ; 9.957  ;    ;    ; 9.957  ;
+; i_EE       ; o_E         ; 9.273  ;    ;    ; 9.273  ;
+; i_EF       ; o_F         ; 10.645 ;    ;    ; 10.645 ;
+; i_EG       ; o_G         ; 11.189 ;    ;    ; 11.189 ;
+; i_EH       ; o_H         ; 12.831 ;    ;    ; 12.831 ;
+; i_FA       ; o_A         ; 12.580 ;    ;    ; 12.580 ;
+; i_FB       ; o_B         ; 13.226 ;    ;    ; 13.226 ;
+; i_FC       ; o_C         ; 10.734 ;    ;    ; 10.734 ;
+; i_FD       ; o_D         ; 10.626 ;    ;    ; 10.626 ;
+; i_FE       ; o_E         ; 8.940  ;    ;    ; 8.940  ;
+; i_FF       ; o_F         ; 10.984 ;    ;    ; 10.984 ;
+; i_FG       ; o_G         ; 11.527 ;    ;    ; 11.527 ;
+; i_FH       ; o_H         ; 10.878 ;    ;    ; 10.878 ;
+; i_GA       ; o_A         ; 10.848 ;    ;    ; 10.848 ;
+; i_GB       ; o_B         ; 12.689 ;    ;    ; 12.689 ;
+; i_GC       ; o_C         ; 11.237 ;    ;    ; 11.237 ;
+; i_GD       ; o_D         ; 11.180 ;    ;    ; 11.180 ;
+; i_GE       ; o_E         ; 10.041 ;    ;    ; 10.041 ;
+; i_GF       ; o_F         ; 11.369 ;    ;    ; 11.369 ;
+; i_GG       ; o_G         ; 10.298 ;    ;    ; 10.298 ;
+; i_GH       ; o_H         ; 9.705  ;    ;    ; 9.705  ;
+; i_HA       ; o_A         ; 10.621 ;    ;    ; 10.621 ;
+; i_HB       ; o_B         ; 10.358 ;    ;    ; 10.358 ;
+; i_HC       ; o_C         ; 11.215 ;    ;    ; 11.215 ;
+; i_HD       ; o_D         ; 12.761 ;    ;    ; 12.761 ;
+; i_HE       ; o_E         ; 10.371 ;    ;    ; 10.371 ;
+; i_HF       ; o_F         ; 12.053 ;    ;    ; 12.053 ;
+; i_HG       ; o_G         ; 10.415 ;    ;    ; 10.415 ;
+; i_HH       ; o_H         ; 9.703  ;    ;    ; 9.703  ;
++------------+-------------+--------+----+----+--------+
+
+
+-------------------
+; Clock Transfers ;
+-------------------
+Nothing to report.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 64    ; 64   ;
+; Unconstrained Input Port Paths  ; 64    ; 64   ;
+; Unconstrained Output Ports      ; 8     ; 8    ;
+; Unconstrained Output Port Paths ; 64    ; 64   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Thu May 02 10:34:08 2024
+Info: Command: quartus_sta INTERLOCK -c INTERLOCK
+Info: qsta_default_script.tcl version: #1
+Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (306004): Started post-fitting delay annotation
+Info (306005): Delay annotation completed successfully
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'INTERLOCK.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
+Warning (332068): No clocks defined in design.
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info (332159): No clocks to report
+Info (332140): No fmax paths to report
+Info (332140): No Setup paths to report
+Info (332140): No Hold paths to report
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332140): No Minimum Pulse Width paths to report
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4597 megabytes
+    Info: Processing ended: Thu May 02 10:34:10 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

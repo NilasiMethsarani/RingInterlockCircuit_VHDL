@@ -1,0 +1,2237 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "05/02/2024 10:34:11"
+
+// 
+// Device: Altera EPM240T100C5 Package TQFP100
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module InterlockCombined (
+	i_AA,
+	i_BA,
+	i_CA,
+	i_DA,
+	i_EA,
+	i_FA,
+	i_GA,
+	i_HA,
+	i_AB,
+	i_BB,
+	i_CB,
+	i_DB,
+	i_EB,
+	i_FB,
+	i_GB,
+	i_HB,
+	i_AC,
+	i_BC,
+	i_CC,
+	i_DC,
+	i_EC,
+	i_FC,
+	i_GC,
+	i_HC,
+	i_AD,
+	i_BD,
+	i_CD,
+	i_DD,
+	i_ED,
+	i_FD,
+	i_GD,
+	i_HD,
+	i_AE,
+	i_BE,
+	i_CE,
+	i_DE,
+	i_EE,
+	i_FE,
+	i_GE,
+	i_HE,
+	i_AF,
+	i_BF,
+	i_CF,
+	i_DF,
+	i_EF,
+	i_FF,
+	i_GF,
+	i_HF,
+	i_AG,
+	i_BG,
+	i_CG,
+	i_DG,
+	i_EG,
+	i_FG,
+	i_GG,
+	i_HG,
+	i_AH,
+	i_BH,
+	i_CH,
+	i_DH,
+	i_EH,
+	i_FH,
+	i_GH,
+	i_HH,
+	o_A,
+	o_B,
+	o_C,
+	o_D,
+	o_E,
+	o_F,
+	o_G,
+	o_H);
+input 	i_AA;
+input 	i_BA;
+input 	i_CA;
+input 	i_DA;
+input 	i_EA;
+input 	i_FA;
+input 	i_GA;
+input 	i_HA;
+input 	i_AB;
+input 	i_BB;
+input 	i_CB;
+input 	i_DB;
+input 	i_EB;
+input 	i_FB;
+input 	i_GB;
+input 	i_HB;
+input 	i_AC;
+input 	i_BC;
+input 	i_CC;
+input 	i_DC;
+input 	i_EC;
+input 	i_FC;
+input 	i_GC;
+input 	i_HC;
+input 	i_AD;
+input 	i_BD;
+input 	i_CD;
+input 	i_DD;
+input 	i_ED;
+input 	i_FD;
+input 	i_GD;
+input 	i_HD;
+input 	i_AE;
+input 	i_BE;
+input 	i_CE;
+input 	i_DE;
+input 	i_EE;
+input 	i_FE;
+input 	i_GE;
+input 	i_HE;
+input 	i_AF;
+input 	i_BF;
+input 	i_CF;
+input 	i_DF;
+input 	i_EF;
+input 	i_FF;
+input 	i_GF;
+input 	i_HF;
+input 	i_AG;
+input 	i_BG;
+input 	i_CG;
+input 	i_DG;
+input 	i_EG;
+input 	i_FG;
+input 	i_GG;
+input 	i_HG;
+input 	i_AH;
+input 	i_BH;
+input 	i_CH;
+input 	i_DH;
+input 	i_EH;
+input 	i_FH;
+input 	i_GH;
+input 	i_HH;
+output 	o_A;
+output 	o_B;
+output 	o_C;
+output 	o_D;
+output 	o_E;
+output 	o_F;
+output 	o_G;
+output 	o_H;
+
+// Design Ports Information
+// o_A	=>  Location: PIN_91,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_B	=>  Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_C	=>  Location: PIN_83,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_D	=>  Location: PIN_47,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_E	=>  Location: PIN_14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_F	=>  Location: PIN_68,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_G	=>  Location: PIN_33,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// o_H	=>  Location: PIN_58,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// i_AA	=>  Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HA	=>  Location: PIN_92,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GA	=>  Location: PIN_7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FA	=>  Location: PIN_99,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EA	=>  Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CA	=>  Location: PIN_88,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DA	=>  Location: PIN_5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BA	=>  Location: PIN_2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HB	=>  Location: PIN_37,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BB	=>  Location: PIN_36,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AB	=>  Location: PIN_41,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DB	=>  Location: PIN_40,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CB	=>  Location: PIN_35,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EB	=>  Location: PIN_38,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GB	=>  Location: PIN_39,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FB	=>  Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CC	=>  Location: PIN_87,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BC	=>  Location: PIN_77,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AC	=>  Location: PIN_82,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HC	=>  Location: PIN_84,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GC	=>  Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EC	=>  Location: PIN_81,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FC	=>  Location: PIN_76,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DC	=>  Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CD	=>  Location: PIN_55,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DD	=>  Location: PIN_54,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_ED	=>  Location: PIN_43,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FD	=>  Location: PIN_53,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BD	=>  Location: PIN_51,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GD	=>  Location: PIN_52,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AD	=>  Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HD	=>  Location: PIN_49,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EE	=>  Location: PIN_18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FE	=>  Location: PIN_15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GE	=>  Location: PIN_6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HE	=>  Location: PIN_20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AE	=>  Location: PIN_16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CE	=>  Location: PIN_96,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BE	=>  Location: PIN_90,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DE	=>  Location: PIN_17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GF	=>  Location: PIN_86,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FF	=>  Location: PIN_95,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EF	=>  Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DF	=>  Location: PIN_100,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HF	=>  Location: PIN_97,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BF	=>  Location: PIN_1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AF	=>  Location: PIN_98,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CF	=>  Location: PIN_4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GG	=>  Location: PIN_44,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FG	=>  Location: PIN_27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EG	=>  Location: PIN_29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DG	=>  Location: PIN_19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CG	=>  Location: PIN_48,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AG	=>  Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BG	=>  Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HG	=>  Location: PIN_34,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_AH	=>  Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_HH	=>  Location: PIN_66,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_GH	=>  Location: PIN_62,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_FH	=>  Location: PIN_67,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_BH	=>  Location: PIN_72,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_EH	=>  Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_CH	=>  Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// i_DH	=>  Location: PIN_64,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("INTERLOCK_v.sdo");
+// synopsys translate_on
+
+wire \i_FA~combout ;
+wire \i_GA~combout ;
+wire \i_EA~combout ;
+wire \i_DA~combout ;
+wire \ContactorA|o_A~2_combout ;
+wire \i_CA~combout ;
+wire \ContactorA|o_A~3_combout ;
+wire \i_BA~combout ;
+wire \i_AA~combout ;
+wire \ContactorA|o_A~0_combout ;
+wire \i_HA~combout ;
+wire \ContactorA|o_A~1_combout ;
+wire \ContactorA|o_A~4_combout ;
+wire \i_CB~combout ;
+wire \i_FB~combout ;
+wire \i_EB~combout ;
+wire \i_GB~combout ;
+wire \ContactorB|o_B~0_combout ;
+wire \i_DB~combout ;
+wire \i_AB~combout ;
+wire \ContactorB|o_B~1_combout ;
+wire \i_HB~combout ;
+wire \i_BB~combout ;
+wire \ContactorB|o_B~2_combout ;
+wire \i_EC~combout ;
+wire \i_HC~combout ;
+wire \i_AC~combout ;
+wire \i_GC~combout ;
+wire \i_FC~combout ;
+wire \ContactorC|o_C~2_combout ;
+wire \ContactorC|o_C~3_combout ;
+wire \i_CC~combout ;
+wire \i_DC~combout ;
+wire \ContactorC|o_C~0_combout ;
+wire \i_BC~combout ;
+wire \ContactorC|o_C~1_combout ;
+wire \ContactorC|o_C~4_combout ;
+wire \i_BD~combout ;
+wire \i_ED~combout ;
+wire \i_FD~combout ;
+wire \i_HD~combout ;
+wire \i_AD~combout ;
+wire \i_GD~combout ;
+wire \ContactorD|o_D~0_combout ;
+wire \ContactorD|o_D~1_combout ;
+wire \i_DD~combout ;
+wire \i_CD~combout ;
+wire \ContactorD|o_D~2_combout ;
+wire \i_EE~combout ;
+wire \i_DE~combout ;
+wire \i_GE~combout ;
+wire \i_AE~combout ;
+wire \i_HE~combout ;
+wire \i_BE~combout ;
+wire \ContactorE|o_E~2_combout ;
+wire \i_CE~combout ;
+wire \ContactorE|o_E~3_combout ;
+wire \i_FE~combout ;
+wire \ContactorE|o_E~0_combout ;
+wire \ContactorE|o_E~1_combout ;
+wire \ContactorE|o_E~4_combout ;
+wire \i_FF~combout ;
+wire \i_GF~combout ;
+wire \i_HF~combout ;
+wire \i_DF~combout ;
+wire \i_BF~combout ;
+wire \i_CF~combout ;
+wire \i_AF~combout ;
+wire \i_EF~combout ;
+wire \ContactorF|o_F~0_combout ;
+wire \ContactorF|o_F~1_combout ;
+wire \ContactorF|o_F~2_combout ;
+wire \i_HG~combout ;
+wire \i_AG~combout ;
+wire \i_EG~combout ;
+wire \i_BG~combout ;
+wire \i_DG~combout ;
+wire \i_CG~combout ;
+wire \ContactorG|o_G~2_combout ;
+wire \ContactorG|o_G~3_combout ;
+wire \ContactorG|o_G~0_combout ;
+wire \i_FG~combout ;
+wire \ContactorG|o_G~1_combout ;
+wire \i_GG~combout ;
+wire \ContactorG|o_G~4_combout ;
+wire \i_HH~combout ;
+wire \i_EH~combout ;
+wire \i_GH~combout ;
+wire \i_CH~combout ;
+wire \i_DH~combout ;
+wire \ContactorH|o_H~0_combout ;
+wire \i_FH~combout ;
+wire \i_BH~combout ;
+wire \ContactorH|o_H~1_combout ;
+wire \i_AH~combout ;
+wire \ContactorH|o_H~2_combout ;
+
+
+// Location: PIN_99,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FA~combout ),
+	.padio(i_FA));
+// synopsys translate_off
+defparam \i_FA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GA~combout ),
+	.padio(i_GA));
+// synopsys translate_off
+defparam \i_GA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EA~combout ),
+	.padio(i_EA));
+// synopsys translate_off
+defparam \i_EA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DA~combout ),
+	.padio(i_DA));
+// synopsys translate_off
+defparam \i_DA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y4_N4
+maxii_lcell \ContactorA|o_A~2 (
+// Equation(s):
+// \ContactorA|o_A~2_combout  = (\i_DA~combout  & ((\i_EA~combout ) # ((\i_FA~combout  & \i_GA~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_FA~combout ),
+	.datab(\i_GA~combout ),
+	.datac(\i_EA~combout ),
+	.datad(\i_DA~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorA|o_A~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorA|o_A~2 .lut_mask = "f800";
+defparam \ContactorA|o_A~2 .operation_mode = "normal";
+defparam \ContactorA|o_A~2 .output_mode = "comb_only";
+defparam \ContactorA|o_A~2 .register_cascade_mode = "off";
+defparam \ContactorA|o_A~2 .sum_lutc_input = "datac";
+defparam \ContactorA|o_A~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_88,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CA~combout ),
+	.padio(i_CA));
+// synopsys translate_off
+defparam \i_CA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y4_N8
+maxii_lcell \ContactorA|o_A~3 (
+// Equation(s):
+// \ContactorA|o_A~3_combout  = (((\ContactorA|o_A~2_combout ) # (\i_CA~combout )))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\ContactorA|o_A~2_combout ),
+	.datad(\i_CA~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorA|o_A~3_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorA|o_A~3 .lut_mask = "fff0";
+defparam \ContactorA|o_A~3 .operation_mode = "normal";
+defparam \ContactorA|o_A~3 .output_mode = "comb_only";
+defparam \ContactorA|o_A~3 .register_cascade_mode = "off";
+defparam \ContactorA|o_A~3 .sum_lutc_input = "datac";
+defparam \ContactorA|o_A~3 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BA~combout ),
+	.padio(i_BA));
+// synopsys translate_off
+defparam \i_BA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AA~combout ),
+	.padio(i_AA));
+// synopsys translate_off
+defparam \i_AA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y4_N2
+maxii_lcell \ContactorA|o_A~0 (
+// Equation(s):
+// \ContactorA|o_A~0_combout  = (\i_FA~combout  & ((\i_EA~combout ) # ((\i_DA~combout  & \i_CA~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_FA~combout ),
+	.datab(\i_DA~combout ),
+	.datac(\i_EA~combout ),
+	.datad(\i_CA~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorA|o_A~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorA|o_A~0 .lut_mask = "a8a0";
+defparam \ContactorA|o_A~0 .operation_mode = "normal";
+defparam \ContactorA|o_A~0 .output_mode = "comb_only";
+defparam \ContactorA|o_A~0 .register_cascade_mode = "off";
+defparam \ContactorA|o_A~0 .sum_lutc_input = "datac";
+defparam \ContactorA|o_A~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_92,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HA~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HA~combout ),
+	.padio(i_HA));
+// synopsys translate_off
+defparam \i_HA~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y4_N5
+maxii_lcell \ContactorA|o_A~1 (
+// Equation(s):
+// \ContactorA|o_A~1_combout  = ((\i_HA~combout  & ((\ContactorA|o_A~0_combout ) # (\i_GA~combout ))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\ContactorA|o_A~0_combout ),
+	.datac(\i_GA~combout ),
+	.datad(\i_HA~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorA|o_A~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorA|o_A~1 .lut_mask = "fc00";
+defparam \ContactorA|o_A~1 .operation_mode = "normal";
+defparam \ContactorA|o_A~1 .output_mode = "comb_only";
+defparam \ContactorA|o_A~1 .register_cascade_mode = "off";
+defparam \ContactorA|o_A~1 .sum_lutc_input = "datac";
+defparam \ContactorA|o_A~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y4_N6
+maxii_lcell \ContactorA|o_A~4 (
+// Equation(s):
+// \ContactorA|o_A~4_combout  = (\i_AA~combout  & ((\ContactorA|o_A~1_combout ) # ((\ContactorA|o_A~3_combout  & \i_BA~combout ))))
+
+	.clk(gnd),
+	.dataa(\ContactorA|o_A~3_combout ),
+	.datab(\i_BA~combout ),
+	.datac(\i_AA~combout ),
+	.datad(\ContactorA|o_A~1_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorA|o_A~4_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorA|o_A~4 .lut_mask = "f080";
+defparam \ContactorA|o_A~4 .operation_mode = "normal";
+defparam \ContactorA|o_A~4 .output_mode = "comb_only";
+defparam \ContactorA|o_A~4 .register_cascade_mode = "off";
+defparam \ContactorA|o_A~4 .sum_lutc_input = "datac";
+defparam \ContactorA|o_A~4 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_35,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CB~combout ),
+	.padio(i_CB));
+// synopsys translate_off
+defparam \i_CB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FB~combout ),
+	.padio(i_FB));
+// synopsys translate_off
+defparam \i_FB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_38,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EB~combout ),
+	.padio(i_EB));
+// synopsys translate_off
+defparam \i_EB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_39,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GB~combout ),
+	.padio(i_GB));
+// synopsys translate_off
+defparam \i_GB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X4_Y1_N2
+maxii_lcell \ContactorB|o_B~0 (
+// Equation(s):
+// \ContactorB|o_B~0_combout  = (\i_EB~combout ) # ((\i_GB~combout  & ((\i_CB~combout ) # (\i_FB~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_CB~combout ),
+	.datab(\i_FB~combout ),
+	.datac(\i_EB~combout ),
+	.datad(\i_GB~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorB|o_B~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorB|o_B~0 .lut_mask = "fef0";
+defparam \ContactorB|o_B~0 .operation_mode = "normal";
+defparam \ContactorB|o_B~0 .output_mode = "comb_only";
+defparam \ContactorB|o_B~0 .register_cascade_mode = "off";
+defparam \ContactorB|o_B~0 .sum_lutc_input = "datac";
+defparam \ContactorB|o_B~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_40,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DB~combout ),
+	.padio(i_DB));
+// synopsys translate_off
+defparam \i_DB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_41,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AB~combout ),
+	.padio(i_AB));
+// synopsys translate_off
+defparam \i_AB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X4_Y1_N4
+maxii_lcell \ContactorB|o_B~1 (
+// Equation(s):
+// \ContactorB|o_B~1_combout  = (\i_CB~combout  & ((\ContactorB|o_B~0_combout ) # ((\i_AB~combout )))) # (!\i_CB~combout  & (\ContactorB|o_B~0_combout  & (\i_DB~combout  & \i_AB~combout )))
+
+	.clk(gnd),
+	.dataa(\i_CB~combout ),
+	.datab(\ContactorB|o_B~0_combout ),
+	.datac(\i_DB~combout ),
+	.datad(\i_AB~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorB|o_B~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorB|o_B~1 .lut_mask = "ea88";
+defparam \ContactorB|o_B~1 .operation_mode = "normal";
+defparam \ContactorB|o_B~1 .output_mode = "comb_only";
+defparam \ContactorB|o_B~1 .register_cascade_mode = "off";
+defparam \ContactorB|o_B~1 .sum_lutc_input = "datac";
+defparam \ContactorB|o_B~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_37,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HB~combout ),
+	.padio(i_HB));
+// synopsys translate_off
+defparam \i_HB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_36,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BB~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BB~combout ),
+	.padio(i_BB));
+// synopsys translate_off
+defparam \i_BB~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X4_Y1_N5
+maxii_lcell \ContactorB|o_B~2 (
+// Equation(s):
+// \ContactorB|o_B~2_combout  = (\ContactorB|o_B~1_combout  & (\i_BB~combout  & ((\i_HB~combout ) # (\i_AB~combout ))))
+
+	.clk(gnd),
+	.dataa(\ContactorB|o_B~1_combout ),
+	.datab(\i_HB~combout ),
+	.datac(\i_BB~combout ),
+	.datad(\i_AB~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorB|o_B~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorB|o_B~2 .lut_mask = "a080";
+defparam \ContactorB|o_B~2 .operation_mode = "normal";
+defparam \ContactorB|o_B~2 .output_mode = "comb_only";
+defparam \ContactorB|o_B~2 .register_cascade_mode = "off";
+defparam \ContactorB|o_B~2 .sum_lutc_input = "datac";
+defparam \ContactorB|o_B~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_81,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EC~combout ),
+	.padio(i_EC));
+// synopsys translate_off
+defparam \i_EC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_84,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HC~combout ),
+	.padio(i_HC));
+// synopsys translate_off
+defparam \i_HC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_82,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AC~combout ),
+	.padio(i_AC));
+// synopsys translate_off
+defparam \i_AC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GC~combout ),
+	.padio(i_GC));
+// synopsys translate_off
+defparam \i_GC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_76,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FC~combout ),
+	.padio(i_FC));
+// synopsys translate_off
+defparam \i_FC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X6_Y4_N4
+maxii_lcell \ContactorC|o_C~2 (
+// Equation(s):
+// \ContactorC|o_C~2_combout  = (\i_FC~combout  & ((\i_GC~combout ) # ((\i_HC~combout  & \i_AC~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_HC~combout ),
+	.datab(\i_AC~combout ),
+	.datac(\i_GC~combout ),
+	.datad(\i_FC~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorC|o_C~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorC|o_C~2 .lut_mask = "f800";
+defparam \ContactorC|o_C~2 .operation_mode = "normal";
+defparam \ContactorC|o_C~2 .output_mode = "comb_only";
+defparam \ContactorC|o_C~2 .register_cascade_mode = "off";
+defparam \ContactorC|o_C~2 .sum_lutc_input = "datac";
+defparam \ContactorC|o_C~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X6_Y4_N8
+maxii_lcell \ContactorC|o_C~3 (
+// Equation(s):
+// \ContactorC|o_C~3_combout  = (\i_EC~combout ) # (((\ContactorC|o_C~2_combout )))
+
+	.clk(gnd),
+	.dataa(\i_EC~combout ),
+	.datab(vcc),
+	.datac(\ContactorC|o_C~2_combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorC|o_C~3_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorC|o_C~3 .lut_mask = "fafa";
+defparam \ContactorC|o_C~3 .operation_mode = "normal";
+defparam \ContactorC|o_C~3 .output_mode = "comb_only";
+defparam \ContactorC|o_C~3 .register_cascade_mode = "off";
+defparam \ContactorC|o_C~3 .sum_lutc_input = "datac";
+defparam \ContactorC|o_C~3 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_87,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CC~combout ),
+	.padio(i_CC));
+// synopsys translate_off
+defparam \i_CC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DC~combout ),
+	.padio(i_DC));
+// synopsys translate_off
+defparam \i_DC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X6_Y4_N6
+maxii_lcell \ContactorC|o_C~0 (
+// Equation(s):
+// \ContactorC|o_C~0_combout  = (\i_HC~combout  & ((\i_GC~combout ) # ((\i_EC~combout  & \i_FC~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_HC~combout ),
+	.datab(\i_GC~combout ),
+	.datac(\i_EC~combout ),
+	.datad(\i_FC~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorC|o_C~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorC|o_C~0 .lut_mask = "a888";
+defparam \ContactorC|o_C~0 .operation_mode = "normal";
+defparam \ContactorC|o_C~0 .output_mode = "comb_only";
+defparam \ContactorC|o_C~0 .register_cascade_mode = "off";
+defparam \ContactorC|o_C~0 .sum_lutc_input = "datac";
+defparam \ContactorC|o_C~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_77,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BC~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BC~combout ),
+	.padio(i_BC));
+// synopsys translate_off
+defparam \i_BC~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X6_Y4_N2
+maxii_lcell \ContactorC|o_C~1 (
+// Equation(s):
+// \ContactorC|o_C~1_combout  = ((\i_BC~combout  & ((\i_AC~combout ) # (\ContactorC|o_C~0_combout ))))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(\i_AC~combout ),
+	.datac(\ContactorC|o_C~0_combout ),
+	.datad(\i_BC~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorC|o_C~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorC|o_C~1 .lut_mask = "fc00";
+defparam \ContactorC|o_C~1 .operation_mode = "normal";
+defparam \ContactorC|o_C~1 .output_mode = "comb_only";
+defparam \ContactorC|o_C~1 .register_cascade_mode = "off";
+defparam \ContactorC|o_C~1 .sum_lutc_input = "datac";
+defparam \ContactorC|o_C~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X6_Y4_N1
+maxii_lcell \ContactorC|o_C~4 (
+// Equation(s):
+// \ContactorC|o_C~4_combout  = (\i_CC~combout  & ((\ContactorC|o_C~1_combout ) # ((\ContactorC|o_C~3_combout  & \i_DC~combout ))))
+
+	.clk(gnd),
+	.dataa(\ContactorC|o_C~3_combout ),
+	.datab(\i_CC~combout ),
+	.datac(\i_DC~combout ),
+	.datad(\ContactorC|o_C~1_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorC|o_C~4_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorC|o_C~4 .lut_mask = "cc80";
+defparam \ContactorC|o_C~4 .operation_mode = "normal";
+defparam \ContactorC|o_C~4 .output_mode = "comb_only";
+defparam \ContactorC|o_C~4 .register_cascade_mode = "off";
+defparam \ContactorC|o_C~4 .sum_lutc_input = "datac";
+defparam \ContactorC|o_C~4 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_51,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BD~combout ),
+	.padio(i_BD));
+// synopsys translate_off
+defparam \i_BD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_43,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_ED~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_ED~combout ),
+	.padio(i_ED));
+// synopsys translate_off
+defparam \i_ED~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_53,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FD~combout ),
+	.padio(i_FD));
+// synopsys translate_off
+defparam \i_FD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_49,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HD~combout ),
+	.padio(i_HD));
+// synopsys translate_off
+defparam \i_HD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AD~combout ),
+	.padio(i_AD));
+// synopsys translate_off
+defparam \i_AD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_52,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GD~combout ),
+	.padio(i_GD));
+// synopsys translate_off
+defparam \i_GD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y1_N2
+maxii_lcell \ContactorD|o_D~0 (
+// Equation(s):
+// \ContactorD|o_D~0_combout  = (\i_HD~combout  & ((\i_AD~combout ) # ((\i_GD~combout )))) # (!\i_HD~combout  & ((\i_ED~combout  & (\i_AD~combout )) # (!\i_ED~combout  & ((\i_GD~combout )))))
+
+	.clk(gnd),
+	.dataa(\i_HD~combout ),
+	.datab(\i_AD~combout ),
+	.datac(\i_ED~combout ),
+	.datad(\i_GD~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorD|o_D~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorD|o_D~0 .lut_mask = "efc8";
+defparam \ContactorD|o_D~0 .operation_mode = "normal";
+defparam \ContactorD|o_D~0 .output_mode = "comb_only";
+defparam \ContactorD|o_D~0 .register_cascade_mode = "off";
+defparam \ContactorD|o_D~0 .sum_lutc_input = "datac";
+defparam \ContactorD|o_D~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X7_Y1_N4
+maxii_lcell \ContactorD|o_D~1 (
+// Equation(s):
+// \ContactorD|o_D~1_combout  = (\ContactorD|o_D~0_combout  & ((\i_ED~combout  & (\i_BD~combout )) # (!\i_ED~combout  & ((\i_FD~combout )))))
+
+	.clk(gnd),
+	.dataa(\i_BD~combout ),
+	.datab(\i_ED~combout ),
+	.datac(\i_FD~combout ),
+	.datad(\ContactorD|o_D~0_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorD|o_D~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorD|o_D~1 .lut_mask = "b800";
+defparam \ContactorD|o_D~1 .operation_mode = "normal";
+defparam \ContactorD|o_D~1 .output_mode = "comb_only";
+defparam \ContactorD|o_D~1 .register_cascade_mode = "off";
+defparam \ContactorD|o_D~1 .sum_lutc_input = "datac";
+defparam \ContactorD|o_D~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_54,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DD~combout ),
+	.padio(i_DD));
+// synopsys translate_off
+defparam \i_DD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_55,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CD~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CD~combout ),
+	.padio(i_CD));
+// synopsys translate_off
+defparam \i_CD~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y1_N5
+maxii_lcell \ContactorD|o_D~2 (
+// Equation(s):
+// \ContactorD|o_D~2_combout  = (\i_DD~combout  & ((\ContactorD|o_D~1_combout  & ((\i_ED~combout ) # (\i_CD~combout ))) # (!\ContactorD|o_D~1_combout  & (\i_ED~combout  & \i_CD~combout ))))
+
+	.clk(gnd),
+	.dataa(\ContactorD|o_D~1_combout ),
+	.datab(\i_ED~combout ),
+	.datac(\i_DD~combout ),
+	.datad(\i_CD~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorD|o_D~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorD|o_D~2 .lut_mask = "e080";
+defparam \ContactorD|o_D~2 .operation_mode = "normal";
+defparam \ContactorD|o_D~2 .output_mode = "comb_only";
+defparam \ContactorD|o_D~2 .register_cascade_mode = "off";
+defparam \ContactorD|o_D~2 .sum_lutc_input = "datac";
+defparam \ContactorD|o_D~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EE~combout ),
+	.padio(i_EE));
+// synopsys translate_off
+defparam \i_EE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_17,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DE~combout ),
+	.padio(i_DE));
+// synopsys translate_off
+defparam \i_DE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GE~combout ),
+	.padio(i_GE));
+// synopsys translate_off
+defparam \i_GE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AE~combout ),
+	.padio(i_AE));
+// synopsys translate_off
+defparam \i_AE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HE~combout ),
+	.padio(i_HE));
+// synopsys translate_off
+defparam \i_HE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_90,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BE~combout ),
+	.padio(i_BE));
+// synopsys translate_off
+defparam \i_BE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y2_N4
+maxii_lcell \ContactorE|o_E~2 (
+// Equation(s):
+// \ContactorE|o_E~2_combout  = (\i_BE~combout  & ((\i_AE~combout ) # ((\i_GE~combout  & \i_HE~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_GE~combout ),
+	.datab(\i_AE~combout ),
+	.datac(\i_HE~combout ),
+	.datad(\i_BE~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorE|o_E~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorE|o_E~2 .lut_mask = "ec00";
+defparam \ContactorE|o_E~2 .operation_mode = "normal";
+defparam \ContactorE|o_E~2 .output_mode = "comb_only";
+defparam \ContactorE|o_E~2 .register_cascade_mode = "off";
+defparam \ContactorE|o_E~2 .sum_lutc_input = "datac";
+defparam \ContactorE|o_E~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_96,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CE~combout ),
+	.padio(i_CE));
+// synopsys translate_off
+defparam \i_CE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y2_N6
+maxii_lcell \ContactorE|o_E~3 (
+// Equation(s):
+// \ContactorE|o_E~3_combout  = (((\ContactorE|o_E~2_combout ) # (\i_CE~combout )))
+
+	.clk(gnd),
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(\ContactorE|o_E~2_combout ),
+	.datad(\i_CE~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorE|o_E~3_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorE|o_E~3 .lut_mask = "fff0";
+defparam \ContactorE|o_E~3 .operation_mode = "normal";
+defparam \ContactorE|o_E~3 .output_mode = "comb_only";
+defparam \ContactorE|o_E~3 .register_cascade_mode = "off";
+defparam \ContactorE|o_E~3 .sum_lutc_input = "datac";
+defparam \ContactorE|o_E~3 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FE~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FE~combout ),
+	.padio(i_FE));
+// synopsys translate_off
+defparam \i_FE~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y2_N7
+maxii_lcell \ContactorE|o_E~0 (
+// Equation(s):
+// \ContactorE|o_E~0_combout  = (\i_HE~combout  & ((\i_AE~combout ) # ((\i_CE~combout  & \i_BE~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_AE~combout ),
+	.datab(\i_CE~combout ),
+	.datac(\i_HE~combout ),
+	.datad(\i_BE~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorE|o_E~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorE|o_E~0 .lut_mask = "e0a0";
+defparam \ContactorE|o_E~0 .operation_mode = "normal";
+defparam \ContactorE|o_E~0 .output_mode = "comb_only";
+defparam \ContactorE|o_E~0 .register_cascade_mode = "off";
+defparam \ContactorE|o_E~0 .sum_lutc_input = "datac";
+defparam \ContactorE|o_E~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y2_N8
+maxii_lcell \ContactorE|o_E~1 (
+// Equation(s):
+// \ContactorE|o_E~1_combout  = ((\i_FE~combout  & ((\i_GE~combout ) # (\ContactorE|o_E~0_combout ))))
+
+	.clk(gnd),
+	.dataa(\i_GE~combout ),
+	.datab(vcc),
+	.datac(\i_FE~combout ),
+	.datad(\ContactorE|o_E~0_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorE|o_E~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorE|o_E~1 .lut_mask = "f0a0";
+defparam \ContactorE|o_E~1 .operation_mode = "normal";
+defparam \ContactorE|o_E~1 .output_mode = "comb_only";
+defparam \ContactorE|o_E~1 .register_cascade_mode = "off";
+defparam \ContactorE|o_E~1 .sum_lutc_input = "datac";
+defparam \ContactorE|o_E~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y2_N2
+maxii_lcell \ContactorE|o_E~4 (
+// Equation(s):
+// \ContactorE|o_E~4_combout  = (\i_EE~combout  & ((\ContactorE|o_E~1_combout ) # ((\i_DE~combout  & \ContactorE|o_E~3_combout ))))
+
+	.clk(gnd),
+	.dataa(\i_EE~combout ),
+	.datab(\i_DE~combout ),
+	.datac(\ContactorE|o_E~3_combout ),
+	.datad(\ContactorE|o_E~1_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorE|o_E~4_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorE|o_E~4 .lut_mask = "aa80";
+defparam \ContactorE|o_E~4 .operation_mode = "normal";
+defparam \ContactorE|o_E~4 .output_mode = "comb_only";
+defparam \ContactorE|o_E~4 .register_cascade_mode = "off";
+defparam \ContactorE|o_E~4 .sum_lutc_input = "datac";
+defparam \ContactorE|o_E~4 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_95,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FF~combout ),
+	.padio(i_FF));
+// synopsys translate_off
+defparam \i_FF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_86,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GF~combout ),
+	.padio(i_GF));
+// synopsys translate_off
+defparam \i_GF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_97,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HF~combout ),
+	.padio(i_HF));
+// synopsys translate_off
+defparam \i_HF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_100,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DF~combout ),
+	.padio(i_DF));
+// synopsys translate_off
+defparam \i_DF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BF~combout ),
+	.padio(i_BF));
+// synopsys translate_off
+defparam \i_BF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CF~combout ),
+	.padio(i_CF));
+// synopsys translate_off
+defparam \i_CF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_98,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AF~combout ),
+	.padio(i_AF));
+// synopsys translate_off
+defparam \i_AF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EF~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EF~combout ),
+	.padio(i_EF));
+// synopsys translate_off
+defparam \i_EF~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X3_Y4_N2
+maxii_lcell \ContactorF|o_F~0 (
+// Equation(s):
+// \ContactorF|o_F~0_combout  = (\i_BF~combout  & ((\i_CF~combout ) # ((\i_AF~combout )))) # (!\i_BF~combout  & (((\i_AF~combout  & \i_EF~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_BF~combout ),
+	.datab(\i_CF~combout ),
+	.datac(\i_AF~combout ),
+	.datad(\i_EF~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorF|o_F~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorF|o_F~0 .lut_mask = "f8a8";
+defparam \ContactorF|o_F~0 .operation_mode = "normal";
+defparam \ContactorF|o_F~0 .output_mode = "comb_only";
+defparam \ContactorF|o_F~0 .register_cascade_mode = "off";
+defparam \ContactorF|o_F~0 .sum_lutc_input = "datac";
+defparam \ContactorF|o_F~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X3_Y4_N4
+maxii_lcell \ContactorF|o_F~1 (
+// Equation(s):
+// \ContactorF|o_F~1_combout  = (\ContactorF|o_F~0_combout  & ((\i_EF~combout  & (\i_HF~combout )) # (!\i_EF~combout  & ((\i_DF~combout )))))
+
+	.clk(gnd),
+	.dataa(\i_HF~combout ),
+	.datab(\i_DF~combout ),
+	.datac(\ContactorF|o_F~0_combout ),
+	.datad(\i_EF~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorF|o_F~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorF|o_F~1 .lut_mask = "a0c0";
+defparam \ContactorF|o_F~1 .operation_mode = "normal";
+defparam \ContactorF|o_F~1 .output_mode = "comb_only";
+defparam \ContactorF|o_F~1 .register_cascade_mode = "off";
+defparam \ContactorF|o_F~1 .sum_lutc_input = "datac";
+defparam \ContactorF|o_F~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X3_Y4_N5
+maxii_lcell \ContactorF|o_F~2 (
+// Equation(s):
+// \ContactorF|o_F~2_combout  = (\i_FF~combout  & ((\i_GF~combout  & ((\ContactorF|o_F~1_combout ) # (\i_EF~combout ))) # (!\i_GF~combout  & (\ContactorF|o_F~1_combout  & \i_EF~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_FF~combout ),
+	.datab(\i_GF~combout ),
+	.datac(\ContactorF|o_F~1_combout ),
+	.datad(\i_EF~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorF|o_F~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorF|o_F~2 .lut_mask = "a880";
+defparam \ContactorF|o_F~2 .operation_mode = "normal";
+defparam \ContactorF|o_F~2 .output_mode = "comb_only";
+defparam \ContactorF|o_F~2 .register_cascade_mode = "off";
+defparam \ContactorF|o_F~2 .sum_lutc_input = "datac";
+defparam \ContactorF|o_F~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_34,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HG~combout ),
+	.padio(i_HG));
+// synopsys translate_off
+defparam \i_HG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_26,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AG~combout ),
+	.padio(i_AG));
+// synopsys translate_off
+defparam \i_AG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EG~combout ),
+	.padio(i_EG));
+// synopsys translate_off
+defparam \i_EG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BG~combout ),
+	.padio(i_BG));
+// synopsys translate_off
+defparam \i_BG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_19,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DG~combout ),
+	.padio(i_DG));
+// synopsys translate_off
+defparam \i_DG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_48,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CG~combout ),
+	.padio(i_CG));
+// synopsys translate_off
+defparam \i_CG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y1_N8
+maxii_lcell \ContactorG|o_G~2 (
+// Equation(s):
+// \ContactorG|o_G~2_combout  = (\i_BG~combout  & ((\i_CG~combout ) # ((\i_EG~combout  & \i_DG~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_EG~combout ),
+	.datab(\i_BG~combout ),
+	.datac(\i_DG~combout ),
+	.datad(\i_CG~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorG|o_G~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorG|o_G~2 .lut_mask = "cc80";
+defparam \ContactorG|o_G~2 .operation_mode = "normal";
+defparam \ContactorG|o_G~2 .output_mode = "comb_only";
+defparam \ContactorG|o_G~2 .register_cascade_mode = "off";
+defparam \ContactorG|o_G~2 .sum_lutc_input = "datac";
+defparam \ContactorG|o_G~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y1_N2
+maxii_lcell \ContactorG|o_G~3 (
+// Equation(s):
+// \ContactorG|o_G~3_combout  = (\i_AG~combout ) # (((\ContactorG|o_G~2_combout )))
+
+	.clk(gnd),
+	.dataa(\i_AG~combout ),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(\ContactorG|o_G~2_combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorG|o_G~3_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorG|o_G~3 .lut_mask = "ffaa";
+defparam \ContactorG|o_G~3 .operation_mode = "normal";
+defparam \ContactorG|o_G~3 .output_mode = "comb_only";
+defparam \ContactorG|o_G~3 .register_cascade_mode = "off";
+defparam \ContactorG|o_G~3 .sum_lutc_input = "datac";
+defparam \ContactorG|o_G~3 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: LC_X2_Y1_N5
+maxii_lcell \ContactorG|o_G~0 (
+// Equation(s):
+// \ContactorG|o_G~0_combout  = (\i_DG~combout  & ((\i_CG~combout ) # ((\i_AG~combout  & \i_BG~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_AG~combout ),
+	.datab(\i_BG~combout ),
+	.datac(\i_DG~combout ),
+	.datad(\i_CG~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorG|o_G~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorG|o_G~0 .lut_mask = "f080";
+defparam \ContactorG|o_G~0 .operation_mode = "normal";
+defparam \ContactorG|o_G~0 .output_mode = "comb_only";
+defparam \ContactorG|o_G~0 .register_cascade_mode = "off";
+defparam \ContactorG|o_G~0 .sum_lutc_input = "datac";
+defparam \ContactorG|o_G~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FG~combout ),
+	.padio(i_FG));
+// synopsys translate_off
+defparam \i_FG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y1_N4
+maxii_lcell \ContactorG|o_G~1 (
+// Equation(s):
+// \ContactorG|o_G~1_combout  = (\i_FG~combout  & ((\ContactorG|o_G~0_combout ) # ((\i_EG~combout ))))
+
+	.clk(gnd),
+	.dataa(\ContactorG|o_G~0_combout ),
+	.datab(\i_FG~combout ),
+	.datac(\i_EG~combout ),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorG|o_G~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorG|o_G~1 .lut_mask = "c8c8";
+defparam \ContactorG|o_G~1 .operation_mode = "normal";
+defparam \ContactorG|o_G~1 .output_mode = "comb_only";
+defparam \ContactorG|o_G~1 .register_cascade_mode = "off";
+defparam \ContactorG|o_G~1 .sum_lutc_input = "datac";
+defparam \ContactorG|o_G~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_44,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GG~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GG~combout ),
+	.padio(i_GG));
+// synopsys translate_off
+defparam \i_GG~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X2_Y1_N6
+maxii_lcell \ContactorG|o_G~4 (
+// Equation(s):
+// \ContactorG|o_G~4_combout  = (\i_GG~combout  & ((\ContactorG|o_G~1_combout ) # ((\i_HG~combout  & \ContactorG|o_G~3_combout ))))
+
+	.clk(gnd),
+	.dataa(\i_HG~combout ),
+	.datab(\ContactorG|o_G~3_combout ),
+	.datac(\ContactorG|o_G~1_combout ),
+	.datad(\i_GG~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorG|o_G~4_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorG|o_G~4 .lut_mask = "f800";
+defparam \ContactorG|o_G~4 .operation_mode = "normal";
+defparam \ContactorG|o_G~4 .output_mode = "comb_only";
+defparam \ContactorG|o_G~4 .register_cascade_mode = "off";
+defparam \ContactorG|o_G~4 .sum_lutc_input = "datac";
+defparam \ContactorG|o_G~4 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_66,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_HH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_HH~combout ),
+	.padio(i_HH));
+// synopsys translate_off
+defparam \i_HH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_EH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_EH~combout ),
+	.padio(i_EH));
+// synopsys translate_off
+defparam \i_EH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_62,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_GH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_GH~combout ),
+	.padio(i_GH));
+// synopsys translate_off
+defparam \i_GH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_CH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_CH~combout ),
+	.padio(i_CH));
+// synopsys translate_off
+defparam \i_CH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_64,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_DH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_DH~combout ),
+	.padio(i_DH));
+// synopsys translate_off
+defparam \i_DH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y3_N4
+maxii_lcell \ContactorH|o_H~0 (
+// Equation(s):
+// \ContactorH|o_H~0_combout  = (\i_DH~combout  & ((\i_EH~combout ) # ((\i_CH~combout )))) # (!\i_DH~combout  & ((\i_GH~combout  & ((\i_CH~combout ))) # (!\i_GH~combout  & (\i_EH~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_EH~combout ),
+	.datab(\i_GH~combout ),
+	.datac(\i_CH~combout ),
+	.datad(\i_DH~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorH|o_H~0_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorH|o_H~0 .lut_mask = "fae2";
+defparam \ContactorH|o_H~0 .operation_mode = "normal";
+defparam \ContactorH|o_H~0 .output_mode = "comb_only";
+defparam \ContactorH|o_H~0 .register_cascade_mode = "off";
+defparam \ContactorH|o_H~0 .sum_lutc_input = "datac";
+defparam \ContactorH|o_H~0 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_67,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_FH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_FH~combout ),
+	.padio(i_FH));
+// synopsys translate_off
+defparam \i_FH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_72,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_BH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_BH~combout ),
+	.padio(i_BH));
+// synopsys translate_off
+defparam \i_BH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y3_N2
+maxii_lcell \ContactorH|o_H~1 (
+// Equation(s):
+// \ContactorH|o_H~1_combout  = (\ContactorH|o_H~0_combout  & ((\i_GH~combout  & ((\i_BH~combout ))) # (!\i_GH~combout  & (\i_FH~combout ))))
+
+	.clk(gnd),
+	.dataa(\ContactorH|o_H~0_combout ),
+	.datab(\i_GH~combout ),
+	.datac(\i_FH~combout ),
+	.datad(\i_BH~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorH|o_H~1_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorH|o_H~1 .lut_mask = "a820";
+defparam \ContactorH|o_H~1 .operation_mode = "normal";
+defparam \ContactorH|o_H~1 .output_mode = "comb_only";
+defparam \ContactorH|o_H~1 .register_cascade_mode = "off";
+defparam \ContactorH|o_H~1 .sum_lutc_input = "datac";
+defparam \ContactorH|o_H~1 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_71,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxii_io \i_AH~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(\i_AH~combout ),
+	.padio(i_AH));
+// synopsys translate_off
+defparam \i_AH~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: LC_X7_Y3_N5
+maxii_lcell \ContactorH|o_H~2 (
+// Equation(s):
+// \ContactorH|o_H~2_combout  = (\i_HH~combout  & ((\ContactorH|o_H~1_combout  & ((\i_AH~combout ) # (\i_GH~combout ))) # (!\ContactorH|o_H~1_combout  & (\i_AH~combout  & \i_GH~combout ))))
+
+	.clk(gnd),
+	.dataa(\i_HH~combout ),
+	.datab(\ContactorH|o_H~1_combout ),
+	.datac(\i_AH~combout ),
+	.datad(\i_GH~combout ),
+	.aclr(gnd),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.cin(gnd),
+	.cin0(gnd),
+	.cin1(vcc),
+	.inverta(gnd),
+	.regcascin(gnd),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.combout(\ContactorH|o_H~2_combout ),
+	.regout(),
+	.cout(),
+	.cout0(),
+	.cout1());
+// synopsys translate_off
+defparam \ContactorH|o_H~2 .lut_mask = "a880";
+defparam \ContactorH|o_H~2 .operation_mode = "normal";
+defparam \ContactorH|o_H~2 .output_mode = "comb_only";
+defparam \ContactorH|o_H~2 .register_cascade_mode = "off";
+defparam \ContactorH|o_H~2 .sum_lutc_input = "datac";
+defparam \ContactorH|o_H~2 .synch_mode = "off";
+// synopsys translate_on
+
+// Location: PIN_91,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_A~I (
+	.datain(!\ContactorA|o_A~4_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_A));
+// synopsys translate_off
+defparam \o_A~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_B~I (
+	.datain(!\ContactorB|o_B~2_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_B));
+// synopsys translate_off
+defparam \o_B~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_83,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_C~I (
+	.datain(!\ContactorC|o_C~4_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_C));
+// synopsys translate_off
+defparam \o_C~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_47,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_D~I (
+	.datain(!\ContactorD|o_D~2_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_D));
+// synopsys translate_off
+defparam \o_D~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_E~I (
+	.datain(!\ContactorE|o_E~4_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_E));
+// synopsys translate_off
+defparam \o_E~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_68,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_F~I (
+	.datain(!\ContactorF|o_F~2_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_F));
+// synopsys translate_off
+defparam \o_F~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_33,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_G~I (
+	.datain(!\ContactorG|o_G~4_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_G));
+// synopsys translate_off
+defparam \o_G~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_58,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxii_io \o_H~I (
+	.datain(!\ContactorH|o_H~2_combout ),
+	.oe(vcc),
+	.combout(),
+	.padio(o_H));
+// synopsys translate_off
+defparam \o_H~I .operation_mode = "output";
+// synopsys translate_on
+
+endmodule
